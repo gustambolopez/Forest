@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000; /* Keep the background black */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Press Start 2P', monospace;
+            color: #fff;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Place the canvas behind other content */
+        }
+
+        .settings-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 15px;
+            border: 2px solid #555;
+            box-shadow: 0 0 20px #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ddd;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #222;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.8rem;
+            background-color: #333;
+            color: #eee;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="asteroidCanvas"></canvas>
+    <div class="settings-container">
+        <h1>Settings</h1>
+        <a href="index.html">
+            <button>Back to Main</button>
+        </a>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('asteroidCanvas');
+        const ctx = canvas.getContext('2d');
+
+        function setCanvasSize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        setCanvasSize(); // Set initial canvas size
+
+        const asteroids = [];
+        const numAsteroids = 50; // Adjust the number of asteroids
+        const asteroidColors = ['#888', '#999', '#777']; // Different shades of gray
+
+        class Asteroid {
+            constructor(x, y, radius, speedX, speedY, color) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.speedX = speedX;
+                this.speedY = speedY;
+                this.color = color;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+                ctx.closePath();
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                // Wrap around edges
+                if (this.x + this.radius < 0) this.x = canvas.width + this.radius;
+                if (this.x - this.radius > canvas.width) this.x = -this.radius;
+                if (this.y + this.radius < 0) this.y = canvas.height + this.radius;
+                if (this.y - this.radius > canvas.height) this.y = -this.radius;
+
+                this.draw();
+            }
+        }
+
+        function init() {
+            for (let i = 0; i < numAsteroids; i++) {
+                const radius = Math.random() * 10 + 3; // Random radius between 3 and 13
+                const x = Math.random() * canvas.width;
+                const y = Math.random() * canvas.height;
+                const speedX = (Math.random() - 0.5) * 0.5; // Small random horizontal speed
+                const speedY = (Math.random() - 0.5) * 0.5; // Small random vertical speed
+                const color = asteroidColors[Math.floor(Math.random() * asteroidColors.length)];
+                asteroids.push(new Asteroid(x, y, radius, speedX, speedY, color));
+            }
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            asteroids.forEach(asteroid => {
+                asteroid.update();
+            });
+        }
+
+        window.addEventListener('resize', () => {
+            setCanvasSize();
+        });
+
+        init();
+        animate();
+    </script>
+</body>
+</html>
