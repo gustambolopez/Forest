@@ -1,196 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0"
+
+
+
     <title>EliteGamez</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="falling_dots.css">
-    <link rel="stylesheet" href="neon_text.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            margin: 0;
-            background-color: #000;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            overflow: hidden;
-            justify-content: flex-start;
-        }
-
-        header {
-            background-color: #111;
-            width: 80%;
-            padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 40px;
-            margin-top: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-sizing: border-box;
-        }
-
-        .header-title {
-            color: #ffa200;
-            font-size: 1.7em;
-            font-family: 'Press Start 2P', monospace;
-            margin-right: 20px;
-            text-shadow: 0 0 20px red, 0 0 40px orange;
-        }
-
-        header nav {
-            display: flex;
-            align-items: center;
-        }
-
-        header nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 10px;
-        }
-
-        header nav ul li a {
-            color: #ffa200;
-            text-decoration: none;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 0.9em;
-            padding: 8px 15px;
-            border-radius: 5px;
-            transition: color 0.3s ease;
-            text-shadow: 0 0 20px red, 0 0 40px orange;
-        }
-
-        header nav ul li a:hover {
-            color: red;
-            background-color: #ffb347;
-        }
-
-        #elite-gamez-above-search {
-            font-family: 'Press Start 2P', monospace;
-            color: white;
-            font-size: 2em;
-            position: absolute; 
-            top: 30%;
-            left: 50%;  
-            transform: translateX(-50%); 
-            margin: 1;   
-            text-shadow:
-                0 0 5px rgb(243, 31, 31),
-                0 0 10px rgb(255, 0, 0),
-                0 0 15px rgb(255, 0, 0),
-                0 0 20px orange,
-                0 0 25px orange,
-                0 0 30px orange,
-                0 0 35px orange;
-            animation: orangeRedNeon 1.7s ease-in-out infinite alternate;
-            cursor: default;
-            white-space: nowrap;
-            margin-bottom: 100px;
-        }
-
-        .falling-dots-container {
-        }
-
-        @keyframes orangeRedNeon {
-            0% {
-                text-shadow:
-                    0 0 5px rgb(255, 0, 0),
-                    0 0 10px rgb(211, 0, 0),
-                    0 0 15px rgb(255, 111, 0),
-                    0 0 20px orange,
-                    0 0 25px orange,
-                    0 0 30px orange,
-                    0 0 35px orange;
-            }
-            100% {
-                text-shadow:
-                    0 0 5px orange,
-                    0 0 10px orange,
-                    0 0 15px orange,
-                    0 0 20px rgb(238, 255, 0),
-                    0 0 25px rgb(255, 174, 0),
-                    0 0 30px rgb(255, 0, 0),
-                    0 0 35px rgb(255, 196, 0);
-            }
-        }
-
-        .uv-search-container { 
-            position: relative;
-            width: 501px; 
-            height: 56px; 
-            margin-top: 200px; /* If you need this */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .uv-search-bar { /* More specific name */
-            position: relative;
-            display: flex;
-            align-items: center;
-            background-color: #530404; /* Match your input background */
-            border-radius: 10px; /* Match your input border-radius */
-            width: 100%; /* Take full container width */
-            height: 100%; /* Take full container height */
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-
-        #uv-address { /* Target your existing input ID */
-            width: calc(100% - 40px); /* Adjust width for icon */
-            border: none;
-            background: none;
-            color: white; /* Match your input color */
-            font-size: 18px; /* Match your input font-size */
-            padding-inline: 10px; /* Match your input padding */
-            outline: none;
-            height: 100%; /* Fill the search bar height */
-            font-family: 'Press Start 2P', monospace; /* Apply the font */
-        }
-
-        #uv-address::placeholder {
-            color: #f5f5f5; /* Match your placeholder color */
-            font-family: 'Press Start 2P', monospace; /* Apply the font to the placeholder as well */
-        }
-
-        .uv-search-icon { /* Specific name */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;  /* Fixed width for icon */
-            height: 100%; /* Full height of search bar */
-            background-color: #333; /* Icon background */
-            border-radius: 0 8px 8px 0; /* Right side rounded */
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .uv-search-icon svg {
-            fill: #fff;
-        }
-
-        .uv-search-icon:hover {
-            background-color: #555;
-        }
-
-        .uv-search-bar:hover {
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-        }
-
-        .uv-search-bar:focus-within {
-            box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
-        }
-    </style>
-<link rel="stylesheet" href="css/neon_text.css">
-<link rel="stylesheet" href="css/cosmic_search.css">
+    <meta name="description" content="A minimalistic web unblocker." />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/cosmic_search.css" />
+    <link rel="stylesheet" href="css/falling_dots.css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Product+Sans"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Press+Start+2P&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/neon_text.css" />
+    <script src="baremux/index.js" defer></script>
+    <script src="epoxy/index.js" defer></script>
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="js/falling_dots_generator.js"></script>
 </head>
 <body>
 
