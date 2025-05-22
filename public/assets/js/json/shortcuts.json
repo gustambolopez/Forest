@@ -1,42 +1,42 @@
 [
-  {
-    "name": "Google",
-    "img": "https://storage.googleapis.com/gd-prod/images/a910d418-7123-4bc4-aa3b-ef7e25e74ae6.799a99c1196c2fd4.webp",
-    "link": "https://google.com"
-  },
-  {
-    "name": "Pinterest",
-    "img": "https://fiu-original.b-cdn.net/fontsinuse.com/use-images/82/82314/82314.png?filename=Pinterest-badge-wordmark.png",
-    "link": "https://pinterest.com/login"
-  },
-  {
-    "name": "Amazon",
-    "img": "https://fabrikbrands.com/wp-content/uploads/Amazon-Logo-1.png",
-    "link": "https://amazon.com"
-  },
-  {
-    "name": "ChatGPT",
-    "img": "https://no.uglisounds.se/assets/imgs/sb/ChatGPT.webp",
-    "link": "https://chatgpt.com"
-  },
-  {
-    "name": "YouTube",
-    "img": "https://99designs-blog.imgix.net/blog/wp-content/uploads/2019/05/youtube-logo.png?auto=format&q=60&fit=max&w=930",
-    "link": "https://youtube.com"
-  },
-  {
-    "name": "Discord",
-    "img": "https://no.uglisounds.se/assets/imgs/sb/Discord.webp",
-    "link": "https://discord.com/login"
-  },
-  {
-    "name": "Twitch",
-    "img": "https://no.uglisounds.se/assets/imgs/sb/Twitch.webp",
-    "link": "https://reddit.com"
-  },
-  {
-    "name": "GitHub",
-    "img": "https://no.uglisounds.se/assets/imgs/sb/GitHub.webp",
-    "link": "https://github.com"
-  }
-]
+    {
+      "name": "Google",
+      "img": "https://storage.googleapis.com/gd-prod/images/a910d418-7123-4bc4-aa3b-ef7e25e74ae6.799a99c1196c2fd4.webp",
+      "link": "https://google.com"
+    },
+    {
+      "name": "Pinterest",
+      "img": "https://fiu-original.b-cdn.net/fontsinuse.com/use-images/82/82314/82314.png?filename=Pinterest-badge-wordmark.png",
+      "link": "https://pinterest.com/login"
+    },
+    {
+      "name": "Amazon",
+      "img": "https://fabrikbrands.com/wp-content/uploads/Amazon-Logo-1.png",
+      "link": "https://amazon.com"
+    },
+    {
+      "name": "ChatGPT",
+      "img": "https://meetergo.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fw9h6iqyj%2Fproduction%2F94c9e94bf8670f49d3f33966f2a04e41b514933c-1009x485.png&amp;w=3840&amp;q=100",
+      "link": "https://chatgpt.com"
+    },
+    {
+      "name": "YouTube",
+      "img": "https://99designs-blog.imgix.net/blog/wp-content/uploads/2019/05/youtube-logo.png?auto=format&q=60&fit=max&w=930",
+      "link": "https://youtube.com"
+    },
+    {
+      "name": "Discord",
+      "img": "https://graphicsprings.com/wp-content/uploads/2023/08/image-29-1024x576.png",
+      "link": "https://discord.com/login"
+    },
+    {
+      "name": "Twitch",
+      "img": "https://cdn.m7g.twitch.tv/ba46b4e5e395b11efd34/assets/uploads/generic-email-header-1.jpg?w=1200&amp;h=630&amp;fm=jpg&amp;auto=format",
+      "link": "https://reddit.com"
+    },
+    {
+      "name": "GitHub",
+      "img": "https://allvectorlogo.com/img/2021/12/github-logo-vector.png",
+      "link": "https://github.com"
+    }
+  ]
