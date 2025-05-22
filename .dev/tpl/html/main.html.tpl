@@ -3,21 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Elite" />
-    <meta name="description" content="Beta v2!" />
+    <meta name="title" content="Ambient" />
+    <meta name="description" content="The better way to browse." />
     <link rel="icon" type="image/x-icon" href="/public/assets/imgs/logo.png" />
-    <title>ELite</title>
+    <title>Ambient</title>
     <!-- Critical CSS -->
     <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/theme/default.css" />
     <!-- Non-critical CSS -->
     <link rel="stylesheet" href="assets/css/rays.css" />
     <link rel="stylesheet" href="assets/css/nav.css" />
-    <link rel="stylesheet" href="assets/css/elements/news.css" />
-    <link rel="stylesheet" href="assets/css/searchbar.css" />
-    <link rel="stylesheet" href="assets/css/shortcuts.css" />
-    <link rel="stylesheet" href="assets/css/elements/greeting.css" />
-    <link rel="stylesheet" href="assets/css/elements/ping.css" />
   </head>
 
   <body>
@@ -28,40 +23,18 @@
       <nav>
         <img src="assets/imgs/logo.png" alt="logo" />
         <div class="flex">
-          <a href="index.html">Home</a>
-          <a href="games.html">Games</a>
-          <a href="apps.html">Apps</a>
-          <a href="ai.html">AI</a>
+          <a href="/">Home</a>
+          <a href="/g">Games</a>
+          <a href="/a">Apps</a>
+          <a href="/ai">AI</a>
         </div>
         <i data-lucide="settings"></i>
       </nav>
-      <div class="news">
-        <i data-lucide=""></i>
-        <p></p>
-      </div>
-      <h1 class="title">Elite</h1>
-      <div class="searchbarContainer">
-        <i data-lucide="search"></i>
-        <form id="uv-form">
-          <input class="searchbar" id="searchbar" type="text" required />
-        </form>
-      </div>
-      <div class="shortcutsContain" id="shortcutsContain"></div>
-      <div id="greeting"></div>
-      <div class="pingCounter">
-        <div id="pingDot" class="dot"></div>
-        <span id="pingValue"></span>
-      </div>
-      <footer>
-        <a href="https://github.com/gustambolopez/elite" target="_blank">GitHub</a>
-        <span>\</span>
-        <a href="https://discord.gg/5hETqn3e">Discord</a>
-      </footer>
+
+      <!-- PAGE CONTENT GOES HERE -->
+
     </div>
     <script src="assets/js/index.js"></script>
-    <script src="assets/js/shortcuts.js"></script>
-    <script src="assets/js/elements/greeting.js"></script>
-    <script src="assets/js/elements/ping.js"></script>
     <!-- UV Files -->
     <script src="/search/bundle.js"></script>
     <script src="/search/config.js"></script>
@@ -71,6 +44,7 @@
       lucide.createIcons();
     </script>
     <!-- DO NOT REMOVE -->
+    <!-- IF PAGE IS USING UV APPLY SCRIPT BELOW -->
     <script>
       const form = document.getElementById('uv-form');
       const address = document.getElementById('searchbar');
@@ -146,5 +120,6 @@
           });
       }
     </script>
+    <!-- IF PAGE IS USING UV APPLY SCRIPT ABOVE -->
   </body>
 </html>
