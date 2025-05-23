@@ -1,18 +1,17 @@
 <div align="center">
-  <img src="https://i.ibb.co/dspWJqwc/image-29.png" />
-  <p>Enhance your experience.</p>
-  <p>Ambient is a web based proxy built for all of your browsing needs.</p>
+
+  <p>Forest is a web based unblocker built for bypassing web blockers.</p>
 </div>
 
-![preview](https://i.ibb.co/xtNW3r2s/Screenshot-2025-03-28-10-37-09-AM.png)
+![preview]()
 
 > [!IMPORTANT]
 > If you fork this repo please consider giving us a star. Thank you!
 
 # Features
 - Proxy
-- Games Page
-- Apps page
+- Games 
+- Apps 
 - Shortcuts
 
 # Deployment
@@ -24,8 +23,8 @@
 To host Ambient on your server, you must run the following commands:
 
 ```bash
-git clone https://github.com/xnoctra/Ambient
-cd Ambient
+git clone https://github.com/gustambolopez/elitegames
+cd elitegames
 ```
 
 ### npm
@@ -45,7 +44,7 @@ pnpm start
 ## Updating
 
 ```bash
-cd Ambient
+cd elitegames
 git pull --force --allow-unrelated-histories # This may overwrite your local changes 
 ```
 
@@ -59,9 +58,9 @@ git pull --force --allow-unrelated-histories # This may overwrite your local cha
 If you come across any issues, submit an issue on GitHub, and we'll address it swiftly. 
 
 > [!TIP]
-> If you're having trouble, feel free to contact us on our [Discord](https://discord.gg/5hETqnGc3e).
+> If you're having trouble, feel free to contact us on our [Discord](https://discord.gg/5hETqc3e).
 
 # Contributors
-Shoutout to all the following people that have contributed to Ambient.
+Santiago
+- main dev
 
-[![Contributors](https://contrib.rocks/image?repo=xnoctra/ambient)](https://github.com/xnoctra/ambient/graphs/contributors)
