@@ -17,7 +17,7 @@
 # Deployment
 > [!WARNING]
 > You __**can not**__ host Ambient locally via static web hosting.
-> These apply to (but not limited to): Netlify, ,Vercer, GitHub Pages, and Cloudflare Pages
+> These apply to (but not limited to): Netlify, Vercel, GitHub Pages, and Cloudflare Pages
 
 ## Server Deployment
 To host Ambient on your server, you must run the following commands:
