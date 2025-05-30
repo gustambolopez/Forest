@@ -17,7 +17,7 @@
 # Deployment
 > [!WARNING]
 > You __**can not**__ host Ambient locally via static web hosting.
-> These apply to (but not limited to): Netlify, GitHub Pages, and Cloudflare Pages
+> These apply to (but not limited to): Netlify, ,Vercer, GitHub Pages, and Cloudflare Pages
 
 ## Server Deployment
 To host Ambient on your server, you must run the following commands:
@@ -49,7 +49,6 @@ git pull --force --allow-unrelated-histories # This may overwrite your local cha
 ```
 
 [![Deploy to Heroku](https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/gustambolopez/elitegames)
-[![Deploy to Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/gustambolopez/elitegames)
 [![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/gustambolopez/elitegames)
 [![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/gustambolopez/elitegames)
 [![Deploy to Cyclic](https://binbashbanana.github.io/deploy-buttons/buttons/remade/cyclic.svg)](https://app.cyclic.sh/api/app/deploy/gustambolopez/elitegames)
