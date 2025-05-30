@@ -3,7 +3,7 @@
   <p>Forest is a web based unblocker built for bypassing web blockers.</p>
 </div>
 
-![preview](https://github.com/gustambolopez/elitegames/blob/main/Screenshot%202025-05-22%20220808.png)
+![preview](https://github.com/gustambolopez/Forest/main/Screenshot%202025-05-22%20220808.png)
 
 > [!IMPORTANT]
 > If you fork this repo please consider giving us a star. Thank you!
@@ -23,7 +23,7 @@
 To host Ambient on your server, you must run the following commands:
 
 ```bash
-git clone https://github.com/gustambolopez/elitegames
+git clone https://github.com/gustambolopez/Forest
 cd elitegames
 ```
 
@@ -44,14 +44,14 @@ pnpm start
 ## Updating
 
 ```bash
-cd elitegames
+cd Forest
 git pull --force --allow-unrelated-histories # This may overwrite your local changes 
 ```
 
-[![Deploy to Heroku](https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/gustambolopez/elitegames)
-[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/gustambolopez/elitegames)
-[![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/gustambolopez/elitegames)
-[![Deploy to Cyclic](https://binbashbanana.github.io/deploy-buttons/buttons/remade/cyclic.svg)](https://app.cyclic.sh/api/app/deploy/gustambolopez/elitegames)
+[![Deploy to Heroku](https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/gustambolopez/Forest)
+[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/gustambolopez/Forest)
+[![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/gustambolopez/Forest)
+[![Deploy to Cyclic](https://binbashbanana.github.io/deploy-buttons/buttons/remade/cyclic.svg)](https://app.cyclic.sh/api/app/deploy/gustambolopez/Forest)
 
 ## Support
 If you come across any issues, submit an issue on GitHub, and we'll address it swiftly. 
