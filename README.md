@@ -3,7 +3,7 @@
   <p>Forest is a web based unblocker built for bypassing web blockers.</p>
 </div>
 
-![preview](https://github.com/gustambolopez/Forest/main/Screenshot%202025-05-22%20220808.png)
+![preview](https://github.com/gustambolopez/Forest/blob/main/Screenshot%202025-05-22%20220808.png)
 
 > [!IMPORTANT]
 > If you fork this repo please consider giving us a star. Thank you!
